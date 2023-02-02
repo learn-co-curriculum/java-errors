@@ -58,20 +58,9 @@ These errors can be compiled successfully, but will occur when we are running
 the code. So, if we were using a terminal window, these errors would show up
 once we run the `java` command on the compiled code.
 
-We can see these errors when we try to run our programs in IntelliJ too. In the
-"Exception Handling" lesson, we learned about the `InputMismatchException` that
-could be thrown if the input we got back from the user was not what we expected.
-Let's try to run the code without the `try-catch` block and enter in an invalid
-input to see the runtime error:
-
-![inputmismatchexception](https://curriculum-content.s3.amazonaws.com/java-mod-1/errors/runtime-error-inputmismatchexception.png)
-
-Notice in this example that the program compiled and was able to start running
-successfully. It wasn't until the user entered an invalid input that the program
-failed to continue executing. This is an example of a runtime error.
-
-Another common runtime error is a division by zero. As we may recall from math
-class, we cannot divide another number by zero, as it results in "not a number".
+We can see these errors when we try to run our programs in IntelliJ too. A
+common runtime error is a division by zero. As we may recall from math class,
+we cannot divide another number by zero, as it results in a "not a number".
 
 Let's see what happens when we run this code:
 
@@ -95,6 +84,15 @@ If we ignore IntelliJ and try to run it, notice again that this gets past the
 compilation step and throws the exception at runtime:
 
 ![arithmeticexception](https://curriculum-content.s3.amazonaws.com/java-mod-1/errors/runtime-error-divide-by-zero.png)
+
+Notice in this example that the program compiled and was able to start running
+successfully. It wasn't until the program tried to execute the
+`int notANumber = 9 / 0;` that the program failed to continue executing. This is
+an example of a runtime error.
+
+Notice in this example that the program compiled and was able to start running
+successfully. It wasn't until the user entered an invalid input that the program
+failed to continue executing. This is an example of a runtime error.
 
 ## The Difference?
 
