@@ -31,7 +31,7 @@ attempted to use a variable _before_ it was initialized?
 
 We see IntelliJ warning us of an error. When we try to run the program, Java
 will first try to compile the source code. But it stops before it can even
-proceed running it:
+proceed to running it:
 
 ![build-error](https://curriculum-content.s3.amazonaws.com/java-mod-1/errors/intellij-compile-time-error.png)
 
@@ -50,6 +50,14 @@ Some examples of compile-time errors include:
 - And other syntax type errors.
 
   ![syntax-errors](https://curriculum-content.s3.amazonaws.com/java-mod-1/errors/compile-time-error-syntax-errors.png)
+
+Imagine if the compiler didn't spit out these types of errors and simply just
+ran the code. This would still cause a bug in the code, but it would be less
+obvious. It might also be harder to identify what went wrong. Other languages
+don't always have this benefit. Our IDE, IntelliJ, also helps us out even more
+by highlighting and warning us of these types of compile-time errors. Luckily,
+our tools and the language itself helps us out a lot in identifying these types
+of errors so that we can quickly fix them!
 
 ## What are Runtime Errors?
 
@@ -89,10 +97,6 @@ Notice in this example that the program compiled and was able to start running
 successfully. It wasn't until the program tried to execute the
 `int notANumber = 9 / 0;` that the program failed to continue executing. This is
 an example of a runtime error.
-
-Notice in this example that the program compiled and was able to start running
-successfully. It wasn't until the user entered an invalid input that the program
-failed to continue executing. This is an example of a runtime error.
 
 ## The Difference?
 
